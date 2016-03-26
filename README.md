@@ -1,5 +1,5 @@
 # groupcidr
-## CIDR block grouping tool
+## A CIDR block grouping tool
 
 Takes a set of dotted-quad IP addresses, ranges, or CIDR blocks, on
  stdin; at EOF, prints a minimal set of CIDR ranges to stdout.
@@ -23,12 +23,12 @@ Output consists of zero or more lines, each a dotted-quad/width CIDR
  be collapsed without resorting to noncontiguous netmasks.
 
 Compile-time options:
-
+```
      -DNO_PROGNAME
              Provide __progname, for systems that don't have it.  If
              it shows up undefined at link time, try compiling with
              this turned on.
-
+```
 The C and Golang versions are both in the public domain are not
 encumbered by any license.
 
