@@ -1,4 +1,14 @@
 # groupcidr
+
+Use the C version as it will work with any basic C compiler without any dependencies
+
+```
+user@host:~/groupcidr $ make
+user@host:~/groupcidr $ cat ip_and_subnet_list.lst | ./groupcidr > supernetted.lst
+```
+
+The file `supernetted.lst` will now contain a compressed and deduplicated list of the network block input. Simple as that!
+
 ## A CIDR block grouping tool
 
 Takes a set of dotted-quad IP addresses, ranges, or CIDR blocks, on
